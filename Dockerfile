@@ -1,3 +1,5 @@
-FROM gihyodocker/basetest:latest
+FROM busybox
 
-RUN cat /tmp/version
+VOLUME /var/lib/mysql
+
+CMD ["bin/true"]
